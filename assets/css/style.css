@@ -1,21 +1,106 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    margin: 0 auto;
+    height: 100%;
+  }
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+  }
 
 
 .vertical{
-    margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  
-  transform: translate(-50%, -50%);
+    position: relative;
+    width: 50em;
+    height: auto;
+    line-height: 30vw;
+    text-align: center;
+    color: #252b37;
+    background-color: #151823;
+    animation: textColor 10s ease infinite;
+
+}
+
+.vertical:after{
+    position: absolute;
+  content: "";
+  top: 8vw;
+  left: 3vw;
+  right: 3vw;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.9);
+  -webkit-filter: blur(5vw);
+  -moz-filter: blur(5vw);
+  -ms-filter: blur(7vw);
+  filter: blur(5vw);
+  background: linear-gradient(270deg, #6ef3e4, #e34c1d);
+  background-size: 200% 200%;
+  animation: animateGlow 3s ease infinite;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes textColor {
+  0% {
+    color: #7e0fff;
+  }
+  50% {
+    color: #0fffc1;
+  }
+  100% {
+    color: #7e0fff;
+  }
+}
+
+
+
+img{
+    width: 100%;
+    display: block;
+    
+}
+
+
+
+
+
+.logo{
+    width: 20em;
+    
 
 }
 
 .header{
-    text-align: center;
+    font-size: 3em;
 }
 
-img {
-    border-radius: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+@media screen and (max-width: 400px) {
+    .logo{
+        
+        width: 20em;
     
-}
+    }
+  }
