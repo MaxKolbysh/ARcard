@@ -16,7 +16,7 @@ body {
     align-items: center;
     font-family: monospace;
     justify-content: space-evenly;
-    background-color: #ffffff;
+    background-color: #f6f7f9;
   }
 
 
@@ -25,8 +25,7 @@ body {
     
     
     text-align: center;
-    color: #252b37;
-    background-color: #151823;
+    
     animation: textColor 10s ease infinite;
 
 }
