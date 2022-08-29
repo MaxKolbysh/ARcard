@@ -22,9 +22,8 @@ body {
 
 .vertical{
     position: relative;
-    width: 50em;
-    height: auto;
-    line-height: 30vw;
+    
+    
     text-align: center;
     color: #252b37;
     background-color: #151823;
@@ -77,8 +76,10 @@ body {
 
 
 img{
+  display: block;
     width: 100%;
-    display: block;
+    height: auto;
+    
     
 }
 
@@ -87,8 +88,8 @@ img{
 
 
 .logo{
-    width: 20em;
-    
+    width: 10vw;
+    height: auto;
 
 }
 
@@ -97,10 +98,12 @@ img{
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px)  {
     .logo{
         
-        width: 20em;
+        width: 10em;
+        height: auto;
+        background-color: #6ef3e4;
     
     }
   }
